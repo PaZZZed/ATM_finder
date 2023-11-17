@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="record"
+            type="com.example.mobg5_53204.database.api.ATMRecord" />
+
+        <variable
+            name="atm"
+            type="com.example.mobg5_53204.database.api.ATMFields" />
+
+        <variable
+            name="clickListener"
+            type="com.example.mobg5_53204.model.recycler.ATMListener" />
+    </data>
+
+    <!-- Ajout de couleur de fond et de marge -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#FFC0CB"
+    android:layout_margin="4dp"
+    android:onClick="@{() -> clickListener.onClick(record)}">
+
+    <TextView
+        android:id="@+id/agence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/adresseFr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/agence"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>

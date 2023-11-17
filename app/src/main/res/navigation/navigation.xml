@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.mobg5_53204.fragments.login.LoginActivity"
+        android:label="login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/fragmentAbout"
+        android:name="com.example.mobg5_53204.AboutFragment"
+        android:label="aboutMe"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.mobg5_53204.fragments.maps.MapsFragment"
+        android:label="Maps"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_mapsFragment_to_ATMDetailFragment"
+            app:destination="@id/ATMDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ATMDetailFragment"
+        android:name="com.example.mobg5_53204.fragments.atm.ATMDetailFragment"
+        android:label="fragment_atm_detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="atmId"
+            app:argType="string" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mobg5_53204.fragments.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_ATMDetailFragment"
+            app:destination="@id/ATMDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favorisFragment"
+        android:name="com.example.mobg5_53204.fragments.favoris.FavorisFragment"
+        android:label="fragment_favoris"
+        tools:layout="@layout/fragment_favoris">
+        <action
+            android:id="@+id/action_favorisFragment_to_ATMDetailFragment"
+            app:destination="@id/ATMDetailFragment" />
+    </fragment>
+
+
+</navigation>

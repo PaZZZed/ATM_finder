@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ATM FINDER</string>
+
+    <string name="NavAboutMe">ABOUT ME</string>
+    <string name="NavMaps">Maps</string>
+    <string name="NavHome">Home</string>
+    <string name="NavFavoris">Favoris</string>
+    <string name="logout">Logout</string>
+
+    <string name="aboutMe">ABOUT ME</string>
+    <string name="aboutMeFirstName">Pawel Aleksander</string>
+    <string name="aboutMeLastName">Zedzian</string>
+    <string name="aboutMeStudentNumber">53204</string>
+
+    <string name="login">LOGIN</string>
+    <string name="loginBtn">login</string>
+    <string name="loginHintEmail">Email</string>
+    <string name="loginHintPassword">Password</string>
+
+
+    <string name="nom_de_l_agence">Nom de l\'agence</string>
+    <string name="adresse_fr">Adresse (FR)</string>
+    <string name="adresse_nl">Adresse (NL)</string>
+    <string name="ajouter_aux_favoris">Ajouter aux favoris</string>
+
+    <string name="supprimer_les_favoris">Supprimer les favoris</string>
+    <string name="pas_de_favoris_ajout_s">Pas de favoris ajoutés</string>
+    <string name="chec_de_la_connexion">Échec de la connexion</string>
+
+
+
+</resources>
